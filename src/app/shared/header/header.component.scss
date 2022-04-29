@@ -1,0 +1,13 @@
+.header{
+    font-family: 'Reggae One', cursive;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        margin:0px;
+    }
+    .header {
+        font-family: 'Reggae One', cursive;
+        font-size:20px;
+    }
+  }
