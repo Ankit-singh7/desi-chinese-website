@@ -7,7 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './container/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { GtagModule } from 'angular-gtag';
 import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -18,7 +18,8 @@ import { ToastrModule } from 'ngx-toastr';
     HttpClientModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
-    SharedModule
+    SharedModule,
+    GtagModule.forRoot({ trackingId: 'AW-10940955966', trackPageviews: true })
   ],
   providers: [],
   bootstrap: [AppComponent]
